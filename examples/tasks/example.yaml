@@ -1,0 +1,51 @@
+version: "1"
+project: "note-api"
+steps:
+  - id: distill
+    agent: idea-distiller
+    input:
+      task: "Distill the goal for a minimal Note API with create/list endpoints."
+  - id: architecture
+    agent: feature-architect
+    input:
+      task: "Outline the feature set and API routes for the Note API."
+  - id: generator
+    agent: code-generator
+    input:
+      task: "Generate Go scaffolding for the Note API service."
+  - id: tdd
+    agent: tdd-enforcer
+    input:
+      task: "Define tests for the in-memory note store."
+  - id: refactor
+    agent: refactorer
+    input:
+      task: "Refine module boundaries for handlers and storage."
+  - id: docs
+    agent: documentation-writer
+    input:
+      task: "Write a usage README for the Note API."
+  - id: infra
+    agent: infrastructure-builder
+    input:
+      task: "Sketch CI and runtime requirements for the Note API."
+  - id: security
+    agent: security-auditor
+    input:
+      task: "Review the Note API for basic security concerns."
+  - id: benchmarks
+    agent: benchmark-tester
+    input:
+      task: "Plan benchmarks for POST /notes throughput."
+  - id: perf
+    agent: performance-optimizer
+    input:
+      task: "Suggest optimizations for request handling."
+  - id: release
+    agent: release-packager
+    input:
+      task: "Define a release package checklist."
+  - id: deploy
+    agent: deployment-agent
+    input:
+      task: "Outline deployment steps for a single VM." 
