@@ -13,6 +13,11 @@ A Go-based, Unix-like multi-agent framework where each agent performs a single j
 ## Highest-Impact Next Step
 - Add a formal YAML task schema validator with clear error messages and unit tests.
 
+## Checks
+- Status: none (no GitHub Actions runs found).
+- TODO: Add CI for `go test ./...` and `go vet ./...`.
+- TODO: Add a formatting check using `gofmt -l` on Go sources.
+
 ## Core Concepts
 
 - **Unix-like agents**: each agent performs one job and emits structured output.
