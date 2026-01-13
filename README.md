@@ -2,6 +2,14 @@
 
 A Go-based, Unix-like multi-agent framework where each agent performs a single job with clear input/output contracts. The manager orchestrates agents using YAML task files.
 
+## Purpose
+- Provide a Go-based framework for running multi-agent workflows defined in YAML.
+
+## Goals
+- Keep agent interfaces explicit and testable with clear input/output contracts.
+- Orchestrate sequential task execution while passing prior results forward.
+- Offer example projects and docs that demonstrate extensible agent patterns.
+
 ## Core Concepts
 
 - **Unix-like agents**: each agent performs one job and emits structured output.
@@ -50,6 +58,7 @@ go test ./...
 
 ## Docs
 
+- Repo map: `docs/REPO_MAP.md`
 - Kafka messaging architecture: `docs/kafka-architecture.md`
 - Self-modifying improvement loop: `docs/self-modifying-loop.md`
 - Additional agents list: `docs/additional-agents.md`
