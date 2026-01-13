@@ -10,6 +10,9 @@ A Go-based, Unix-like multi-agent framework where each agent performs a single j
 - Orchestrate sequential task execution while passing prior results forward.
 - Offer example projects and docs that demonstrate extensible agent patterns.
 
+## Highest-Impact Next Step
+- Add a formal YAML task schema validator with clear error messages and unit tests.
+
 ## Core Concepts
 
 - **Unix-like agents**: each agent performs one job and emits structured output.
