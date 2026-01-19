@@ -1,0 +1,156 @@
+version: "1"
+project: "enterprise-app-factory"
+steps:
+  - id: intake
+    agent: idea-distiller
+    input:
+      task: |
+        Distill the following raw input into a clear problem statement, goals, success metrics,
+        assumptions, and non-goals.
+        Raw input:
+          build an agentic software team with a focus on consistency and reliability. the team turns human input into working software that meets common enterprise standards.
+
+  - id: ux-research
+    agent: ux-researcher
+    input:
+      task: "Define personas, journeys, UX risks, and usability principles."
+
+  - id: product-backlog
+    agent: feature-architect
+    input:
+      task: "Translate the problem into epics, user stories, acceptance criteria, and a sprint-ready backlog."
+
+  - id: api-contracts
+    agent: api-designer
+    input:
+      task: "Define API contracts for core workflows and integrations."
+
+  - id: data-model
+    agent: data-modeler
+    input:
+      task: "Design domain entities, relationships, and storage requirements."
+
+  - id: config
+    agent: config-manager
+    input:
+      task: "Define environment config, secrets, and runtime settings for dev/stage/prod."
+
+  - id: security
+    agent: security-auditor
+    input:
+      task: "Create a threat model and baseline security requirements."
+
+  - id: compliance
+    agent: compliance-officer
+    input:
+      task: "List compliance requirements (PII, audit logging, retention, access controls)."
+
+  - id: dependency-review
+    agent: dependency-auditor
+    input:
+      task: "Recommend dependencies and flag risky licenses or vulnerabilities."
+
+  - id: scaffolding
+    agent: code-generator
+    input:
+      task: "Generate full-stack app scaffolding (backend, frontend, shared contracts)."
+
+  - id: tests
+    agent: tdd-enforcer
+    input:
+      task: "Define unit/integration tests aligned to acceptance criteria."
+
+  - id: test-data
+    agent: test-data-generator
+    input:
+      task: "Generate fixtures and seed data for core flows."
+
+  - id: refactor
+    agent: refactorer
+    input:
+      task: "Refine module boundaries, naming, and layering."
+
+  - id: build-quality
+    agent: build-cop
+    input:
+      task: "Define build, lint, and quality gates."
+
+  - id: performance
+    agent: performance-optimizer
+    input:
+      task: "Identify performance hotspots and caching strategy."
+
+  - id: benchmarks
+    agent: benchmark-tester
+    input:
+      task: "Plan benchmark scenarios for key endpoints and workflows."
+
+  - id: analytics
+    agent: analytics-integrator
+    input:
+      task: "Add analytics instrumentation and KPI tracking plan."
+
+  - id: feature-flags
+    agent: feature-flagger
+    input:
+      task: "Plan feature flagging and rollout strategy."
+
+  - id: localization
+    agent: localization-manager
+    input:
+      task: "Define i18n/l10n plan for UI copy and formatting."
+
+  - id: logging
+    agent: log-analyzer
+    input:
+      task: "Define structured logging fields, alerts, and dashboards."
+
+  - id: qa
+    agent: qa-triage
+    input:
+      task: "Create QA strategy, test matrix, and triage workflow."
+
+  - id: docs
+    agent: documentation-writer
+    input:
+      task: "Write README, onboarding docs, and runbooks."
+
+  - id: infra
+    agent: infrastructure-builder
+    input:
+      task: "Design CI/CD pipelines and runtime infrastructure."
+
+  - id: deployment
+    agent: deployment-agent
+    input:
+      task: "Outline deployment and rollback steps."
+
+  - id: release
+    agent: release-packager
+    input:
+      task: "Create a release checklist and packaging plan."
+
+  - id: release-notes
+    agent: release-notes-writer
+    input:
+      task: "Draft release notes template and initial notes."
+
+  - id: incident
+    agent: incident-responder
+    input:
+      task: "Define incident response playbooks and severity levels."
+
+  - id: backup
+    agent: backup-manager
+    input:
+      task: "Plan backup/restore strategy."
+
+  - id: cost
+    agent: cost-optimizer
+    input:
+      task: "Estimate costs and propose optimizations."
+
+  - id: chaos
+    agent: chaos-engineer
+    input:
+      task: "Design chaos experiments to validate resilience."
