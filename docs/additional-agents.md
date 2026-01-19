@@ -10,6 +10,7 @@ The framework includes 20 additional agents beyond the required 12.
 - log-analyzer
 - test-data-generator
 - migration-planner
+- product-manager
 - incident-responder
 - qa-triage
 - build-cop

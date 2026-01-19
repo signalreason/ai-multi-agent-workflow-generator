@@ -25,6 +25,7 @@ import (
 	"ai-multi-agent-workflow-generator/internal/agents/loganalyzer"
 	"ai-multi-agent-workflow-generator/internal/agents/migrationplanner"
 	"ai-multi-agent-workflow-generator/internal/agents/performanceoptimizer"
+	"ai-multi-agent-workflow-generator/internal/agents/productmanager"
 	"ai-multi-agent-workflow-generator/internal/agents/qatriage"
 	"ai-multi-agent-workflow-generator/internal/agents/refactorer"
 	"ai-multi-agent-workflow-generator/internal/agents/releasenoteswriter"
@@ -71,4 +72,5 @@ func RegisterAll(r *agent.Registry) {
 	backupmanager.Register(r)
 	featureflagger.Register(r)
 	releasenoteswriter.Register(r)
+	productmanager.Register(r)
 }
